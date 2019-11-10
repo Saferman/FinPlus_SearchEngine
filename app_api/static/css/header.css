@@ -1,0 +1,22 @@
+.layout-header {
+    height: 64px;
+    padding: 0 50px;
+    line-height: 64px;
+    background: rgb(5,73,98);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-right-tale-login{
+    font-size:150%;
+}
+
+
+.suggested_search{
+    padding: 0 0px;
+    font-family: "宋体","仿宋",sans-serif;
+    font-weight: bold;
+    font-size:150%;
+    font-style: normal;
+    color: black;
+}

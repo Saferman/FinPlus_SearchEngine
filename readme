@@ -1,0 +1,20 @@
+pip install pymysql
+pip install mysqlclient  有人做了测试, 性能比PyMySQL好
+
+# 建立数据库模型 https://www.runoob.com/django/django-model.html
+$ py -3 manage.py migrate   # 创建表结构
+----
+$ py -3 manage.py makemigrations app_api  # 让 Django 知道我们在我们的模型有一些变更
+$ py -3 manage.py migrate app_api   # 创建表结构
+
+# mysql 5.5 配合 Django==2.0.5 with mysqlclient==1.4.2
+mysql 5.6 + djangp=2.2.5
+
+### 更多需要安装的依赖
+fuzzywuzzy==0.17.0
+python-Levenshtein
+
+算法涉及的数据提供是面向数据库的,或者像这次跨过后端处理
+
+
+XFTP 配合 XSHELL

@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>FinPlus</title>
+    <link href="static/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="static/css/index.css" rel="stylesheet" type="text/css"/>
+    <link href="static/css/header.css" rel="stylesheet" type="text/css"/>
+    <link href="static/css/rd.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="container">
+    <!--头部-->
+    <header style="height:50px;background:rgb(5,73,98);">
+
+    </header>
+
+    <!--搜索框部分-->
+    <div id="bd">
+        <div id="main">
+            <h1 class="title">
+                <div>
+                </div>
+                <div class="logo large" style="margin-top:0px"></div>
+            </h1>
+            <div class="nav ue-clear" style="margin-top:10px">
+                <ul class="searchList">
+                    <li id="tag_person" class="searchItem current">Person</li>
+                    <li id="tag_field" class="searchItem">Field</li>
+                </ul>
+            </div>
+            <div class="inputArea">
+                <form action="/search">
+                    <input id="search_input" type="text" name="expert_name" class="searchInput"/>
+                    <input id="search_button" type="button" class="searchButton" onclick="login()"/>
+                </form>
+            </div>
+
+            <!--         <div class="historyArea">
+                        <p class="suggested_search">
+        333333333333333333333333333
+                        </p>
+                    </div> -->
+        </div><!-- End of main -->
+    </div><!--End of bd-->
+
+    <!--    图片展示部分-->
+    <div class="rd" style="margin-top:10px">
+        <section id="SECTION_1">
+            <section id="SECTION_2">
+                <div id="DIV_6" style="margin-left:250px">
+                    <a href="/search?topic_name=Microeconomics" rel="noopener noreferrer" id="A_7">
+                        <img src="static/img/area_pic_1.jpeg" alt="THU AI TR" id="IMG_8"/>
+                        <p id="P_9">
+                            Microeconomics
+                        </p>
+                    </a>
+                    <a href="/search?topic_name=Economics" id="A_10">
+                        <img src="static/img/area_pic_2.jpeg" alt="ai10" id="IMG_11"/>
+                        <p id="P_12">
+                            Economics
+                        </p>
+                    </a>
+                    <a href="/search?topic_name=Finance" rel="noopener noreferrer" id="A_13"><img
+                            src="static/img/area_pic_3.jpeg" alt="人才流动" id="IMG_14"/>
+                        <p id="P_15">
+                            Finance
+                        </p>
+                    </a>
+                    <a href="/search?topic_name=Socioeconomics" rel="noopener noreferrer" id="A_16"><img
+                            src="static/img/area_pic_4.jpeg" alt="AMiner开放社区" id="IMG_17"/>
+                        <p id="P_18">
+                            Socioeconomics
+                        </p>
+                    </a>
+                </div>
+                <!--   <div id="DIV_19" >
+                      <a href="/ranks/conf" id="A_20" style="margin-left:-217px"><img src="https://fileserver.aminer.cn/sys/aminer/banner/v1/img6.png" alt="期刊（会议）排名" id="IMG_21" />
+                      <p id="P_22">
+                          Conference Rank
+                      </p>
+                      </a>
+                      <a href="//trend.aminer.cn/" rel="noopener noreferrer" id="A_23" style="margin-left:-217px"><img src="https://fileserver.aminer.cn/sys/aminer/banner/v1/img7.png" alt="热门领域发展趋势" id="IMG_24" />
+                      <p id="P_25">
+                          Trend
+                      </p>
+                      </a>
+                  </div> -->
+            </section>
+        </section>
+    </div>
+
+    <div class="foot" style="margin-top:20px ">
+        <div class="wrap">
+            <div class="copyright">Copyright © Tsinghua University</div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="static/js/jquery.js"></script>
+<script type="text/javascript" src="static/js/global.js"></script>
+<script type="text/javascript">
+
+
+    $('.searchList').on('click', '.searchItem', function () {
+        $('.searchList .searchItem').removeClass('current');
+        $(this).addClass('current');
+    });
+
+    // 联想下拉显示隐藏
+    $('.searchInput').on('focus', function () {
+        $('.dataList').show()
+    });
+
+    // 联想下拉点击
+    $('.dataList').on('click', 'li', function () {
+        var text = $(this).text();
+        $('.searchInput').val(text);
+        $('.dataList').hide()
+    });
+
+    hideElement($('.dataList'), $('.searchInput'));
+
+    function login() {
+        var tag_person_color = "";
+        var dom = document.getElementById('tag_person');
+        if (window.getComputedStyle)     //判断是否存在getComputedStyle方法
+        {
+            tag_person_color = document.defaultView.getComputedStyle(dom, null).color;
+        }
+        else if (dom.currentStyle)           // 兼容低版本ie
+        {
+            tag_person_color = dom.currentStyle.color;
+        }
+        if (tag_person_color == 'rgb(0, 0, 0)')      // 选择Field
+        {
+            var search_keyword = document.getElementById('search_input').value;
+            window.location.href = "/search?topic_name=" + search_keyword;
+        }
+        else {
+            var search_keyword = document.getElementById('search_input').value;
+            window.location.href = "/search?expert_name=" + search_keyword;
+        }
+    }
+
+    $('#search_input').keydown(function (e) {
+        if (e.keyCode == 13) {
+            var tag_person_color = "";
+            var dom = document.getElementById('tag_person');
+            if (window.getComputedStyle)     //判断是否存在getComputedStyle方法
+            {
+                tag_person_color = document.defaultView.getComputedStyle(dom, null).color;
+            }
+            else if (dom.currentStyle)           // 兼容低版本ie
+            {
+                tag_person_color = dom.currentStyle.color;
+            }
+            if (tag_person_color == 'rgb(0, 0, 0)')      // 选择Field
+            {
+                $("#search_input").attr('name', 'topic_name');
+            }
+            else {
+                $("#search_input").attr('name', 'expert_name');
+            }
+
+        }
+    });
+
+</script>
+</html>

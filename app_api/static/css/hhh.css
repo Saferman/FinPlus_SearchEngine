@@ -1,0 +1,108 @@
+.person_baseinfo {
+
+    float: left;
+    width: 555px;
+    margin-right: 30px;
+    margin-top: 20px;
+
+}
+
+.p_name {
+
+    font-size: 28px;
+    line-height: 30px;
+    color: #333;
+    margin-bottom: 8px;
+    float: left;
+
+}
+
+.p_volume {
+
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+
+}
+
+.p_scholarID {
+
+    width: 192px;
+    height: 24px;
+    background-color: #fafafa;
+    padding: 3px;
+    float: right;
+
+}
+
+.p_scholarID .p_scholarID_all {
+
+    width: 190px;
+    height: 22px;
+    border: 1px solid #E6E6E6;
+    background-color: #fafafa;
+    color: #999;
+    font-size: 13px;
+    text-align: center;
+    line-height: 24px;
+
+}
+.p_scholarID .p_scholarID_all .p_scholarID_id {
+
+    font-size: 13px;
+    color: #f60;
+
+}
+.p_affiliate {
+
+    clear: both;
+
+}
+
+.p_ach_wr {
+
+    width: 380px;
+    display: inline-block;
+    margin: 20px 0 14px;
+    overflow: hidden;
+    height: 100px;
+
+}
+
+.p_ach_item {
+
+    float: left;
+    border-right: 1px solid #efefef;
+    margin-right: 10px;
+    font-size: 20px;
+    width: 78px;
+
+}
+
+.p_ach_num {
+
+}
+
+.p_ach_type {
+
+    font-size: 14px;
+
+}
+.c_gray {
+
+    color: #999;
+
+}
+.person_editinfo {
+
+    word-break: break-all;
+    line-height: 25px;
+
+}
+prefix_label {
+
+    float: left;
+
+}

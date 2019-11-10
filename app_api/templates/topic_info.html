@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/css/umi.53da8343.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="static/css/vendors.b9aad867.chunk.css"> <!--控制 header -->
+    <link rel="stylesheet" type="text/css" href="static/css/p__aminer__search.635fc40b.chunk.css">
+
+
+    <link rel="stylesheet" type="text/css" href="static/css/topic-info.css"> <!--控制 header -->
+    <!--    <link rel="stylesheet" href="css/picnic.min.css">-->
+    <link rel="stylesheet" href="https://www.aminer.cn/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/556910b8.app.css">
+    <link rel="stylesheet" href="https://www.aminer.cn/app/d5c79d71.vendor.css">
+
+
+</head>
+
+
+<body>
+
+<div id="root">
+    <section class="mainlayout antd-pro-layouts-aminer-layout-layout antd-pro-layouts-aminer-layout-home ant-layout">
+        <div class="antd-pro-layouts-aminer-layout-headerPlaceholder">
+            <div class="antd-pro-layouts-aminer-headers-header-headerBg antd-pro-layouts-aminer-headers-header-home">
+                <header class="antd-pro-layouts-aminer-headers-header-header ant-layout-header">
+                    <div class="antd-pro-layouts-aminer-headers-header-headerLeft">
+                        <div class="antd-pro-layouts-aminer-headers-header-left-zone-logo antd-pro-layouts-aminer-headers-header-left-zone-home">
+                            <a href="/" aria-label="ckcest" style="width:100px" target="_blank"
+                               rel="noopener noreferrer"
+                               class="antd-pro-layouts-aminer-headers-header-left-zone-minHide antd-pro-layouts-aminer-headers-header-left-zone-kst"><img
+                                    src="static/img/small_logo.png"
+                                    alt="ckcest"></a><span
+                                class="antd-pro-layouts-aminer-headers-header-left-zone-minHide"></span><a
+                                class="antd-pro-layouts-aminer-headers-header-left-zone-aminer" aria-label="aminer"
+                                href="/">
+
+                        </a></div>
+                    </div>
+                    <ul class="antd-pro-layouts-aminer-headers-right-zone-rightInfo">
+                        <li><a class="antd-pro-layouts-aminer-headers-right-zone-simpleLanguage">
+
+                        </a></li>
+                        <li><a href="/login?callback=search%3Ft%3Db%26q%3D233">
+
+                        </a></li>
+                    </ul>
+                    <div class="antd-pro-layouts-aminer-headers-header-searchContent">
+                        <form action='/search' class="ant-form ant-form-horizontal antd-pro-components-aminer-search-control-search-box-searchBox">
+                            <span class="ant-input-group ant-input-group-compact antd-pro-components-aminer-search-control-search-box-search kgsuggest"><div
+                                    role="combobox" aria-haspopup="listbox" aria-owns="react-autowhatever-kgsuggest"
+                                    aria-expanded="false" class="react-autosuggest__container"><input type="text"
+                                                                                                      autocomplete="off"
+                                                                                                      aria-autocomplete="list"
+                                                                                                      aria-controls="react-autowhatever-kgsuggest"
+                                                                                                      class="react-autosuggest__input"
+                                                                                                      placeholder=""
+                                                                                                      name="topic_name"
+                                                                                                      value=""><div
+                                    id="react-autowhatever-kgsuggest" role="listbox"
+                                    class="react-autosuggest__suggestions-container"></div></div><button type="submit"
+                                                                                                         class="ant-btn antd-pro-components-aminer-search-control-search-box-searchBtn ant-btn-primary"><span><i
+                                    aria-label="icon: search" class="anticon anticon-search"><svg
+                                    viewBox="64 64 896 896" class="" data-icon="search" width="1em" height="1em"
+                                    fill="currentColor" aria-hidden="true" focusable="false"><path
+                                    d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></i></span></button></span>
+                        </form>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <!-- 个人信息区块 -->
+        <div ng-if="!profile.hidden" class="row profile-content ng-scope">
+            <!-- ngInclude: '/components/profile/profile-info/profile-info.html' -->
+            <div data-ng-include="'https://www.aminer.cn/components/profile/profile-info/profile-info.html'"
+                 class="ng-scope">
+                <!--Created by yutao on 14-7-9.-->
+                <div ng-controller="ProfileInfoCtrl" class="ng-scope">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <div class="row no-margin">
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 expert-base">
+                                <h1 id="topic_name" class="ng-binding">Finance
+                                    <!-- ngIf: profile.name_zh --><!-- ngIf: profile.bind -->
+                                    <!-- ngIf: !profile.bind --><i ng-if="!profile.bind"
+                                                                   class="fa fa-check-circle-o font-xs unbind-color ng-scope"></i>
+                                    <!-- end ngIf: !profile.bind -->
+                                    <!-- ngIf: isRoster()||listUserPerm.perm.person.u -->
+                                    <!-- ngIf: isRoster()||listUserPerm.perm.person.u -->
+                                    <hr class="split-line">
+                                </h1>
+                                <!-- 个人信息介绍区域 -->
+                                <div class="area_baseinfo">
+                                    <!--        <div class="p_name">柏浪涛</div>-->
+                                    <!--        <div class="p_volume">311人看过</div>-->
+                                    <!--        <div class="p_scholarID">-->
+                                    <!--            <div class="p_scholarID_all">ScholarID:<span class="p_scholarID_id">CN-B77427UJ</span></div>-->
+                                    <!--        </div>-->
+                                    <ul class="p_ach_wr">
+                                        <li class="p_ach_item" style="width: 100px;"><p class="p_ach_type c_gray">Papers</p>
+                                            <p id="papers_num" class="p_ach_num">88</p></li>
+                                        <li class="p_ach_item" style="width: 120px;"><p class="p_ach_type c_gray">Citations</p>
+                                            <p id="citations_num" class="p_ach_num">9</p></li>
+                                        <li class="p_ach_item"  style="width: 100px;"><p class="p_ach_type c_gray">Authors</p>
+                                            <p id="author_num" class="p_ach_num">5</p></li>
+
+                                    </ul>
+                                    <div class="area_editinfo">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row no-margin hidden-mobile radar-block">
+
+
+                            <div id="popover_radar" rel="popover" class="col-sm-3 hidden-xs" data-original-title=""
+                                 title="">
+
+                            </div>
+                            <div class="col-sm-9 col-xs-12 refresh-interests"><p class="text-muted no-margin"></p>
+                                <hr class="no-padding no-margin">
+                                <div style="margin-right: -3%;" class="col-md-12 no-padding">
+                                    <!-- ngInclude: "components/vis/vis-research-interest/vis-research-interest.html" -->
+                                    <div ng-include="&quot;https://www.aminer.cn/components/vis/vis-research-interest/vis-research-interest.html&quot;"
+                                         class="ng-scope"><!--Created by yutao on 14-10-14.
+-->
+                                        <div ng-controller="VisResearchInterestCtrl" style="height:350px;"
+                                             class="ng-scope">
+                                            <!-- 多图 -->
+                                            <div class="expert_paper_info_pics">
+                                                <!--hot spot-->
+                                                <div class="col-md-6" style="width:49%; float:left;">
+                                                    <div id="Hot_Spots" class="hot-tile">
+                                                        Hot Spots
+                                                    </div>
+
+                                                    <div id="area_hot_bar_chart"
+                                                         style="width: 400px; height: 500px; user-select: none; -webkit-tap-highlight-color: transparent;display: inline;position: relative;top: -12px;"
+                                                         _echarts_instance_="ec_1572515586012">
+                                                        <div style="position: relative; overflow: hidden; width: 400px; height: 500px; padding: 0px; margin: 0px; border-width: 0px; cursor: pointer;">
+                                                            <canvas data-zr-dom-id="zr_0" width="800" height="1000"
+                                                                    style="position: absolute; left: 0px; top: 0px; width: 400px; height: 500px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;background:#13c2c2;"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6" style="width:49%; float:right;">
+                                                    <div id="Ups/Downs" class="hot-tile">
+                                                        Ups/Downs
+                                                    </div>
+                                                    <div id="area_hot_trend_bar_chart"
+                                                         style="width: 400px; height: 500px; user-select: none; -webkit-tap-highlight-color: transparent;display: inline;position: relative;top: -12px;"
+                                                         _echarts_instance_="ec_1572515586011">
+                                                        <div style="position: relative; overflow: hidden; width: 400px; height: 500px; padding: 0px; margin: 0px; border-width: 0px; cursor: pointer;">
+                                                            <canvas data-zr-dom-id="zr_0" width="800" height="1000"
+                                                                    style="position: relative;left: 0px;top: 10px;width: 400px;height: 500px;user-select: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);padding: 0px;margin: 0px;border-width: 0px;"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="expert_paper_info_graph" style="width:200%; float:bottom;">
+                                                <div class="col-md-6" style="width:49%; float:bottom;">
+                                                    <div id="Core_Network" class="graph-tile">
+                                                        Core Network
+                                                    </div>
+                                                    <div id="expert_net2_chart"
+                                                         style="width: 900px; height:900px;"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 hidden-sm hidden-xs right-block">
+                        <div class="no-padding shadow-5 font-xs">
+
+
+                        </div>
+                        <div ng-click="contactYourAdmin()"
+                             ng-class="{ displayBlock: profile.locks.edit.status==false &amp;&amp; isLoggedIn() }"
+                             class="btn btn-primary btn-xs margin-top-10 margin-bottom-10 contactBtn ng-binding">
+                            Contact the discipline manager
+                        </div>
+                        <div style="float:right;" class="div">
+
+                            <!--.btn.btn-primary.btn-lg.margin-top-10.margin-bottom-10(ng-click="showTrajectory()", style="height:60px;")-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 下部分显示区块 -->
+
+    </section>
+</div>
+
+
+<script src="static/js/echarts_code.js"></script>
+<script src="static/js/echarts.min.js"></script>
+<script src="static/js/common.js"></script>
+<script src="static/js/echarts-wordcloud.min.js"></script>
+<script>
+
+    function get_topic_info_data() {
+        var topic_id = getQueryVariable("topic_id");
+        var xmlhttp;
+        if (window.XMLHttpRequest)                // code for IE7+, Firefox, Chrome, Opera, Safari
+        {
+            xmlhttp = new XMLHttpRequest();
+        }
+        else    // code for IE6, IE5
+        {
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                var json_data = JSON.parse(xmlhttp.responseText);
+
+                document.getElementById("topic_name").innerHTML = json_data.name;
+                var dalao_data = eval(json_data.bigname);
+                var xiaolao_data = eval(json_data.socialname);
+                var link_data = eval(json_data.edgesname);
+                var expert_net_chart_color = ['#3d84a8', '#abedd8'];
+                show_expert_net2_chart(dalao_data, xiaolao_data, link_data, expert_net_chart_color);
+
+                document.getElementById("papers_num").innerHTML = json_data.papers_num;
+                document.getElementById("citations_num").innerHTML = json_data.ccnt_num;
+                document.getElementById("author_num").innerHTML = json_data.len;
+
+                var area_hot_bar_chart_data = json_data.area_hot_top10_list;
+                show_area_hot_bar_chart(eval(area_hot_bar_chart_data));
+
+                var area_hot_trend_bar_chart_data = json_data.area_trend_top10_list;
+                show_area_hot_trend_bar_chart(eval(area_hot_trend_bar_chart_data));
+
+
+            }
+        }
+
+
+                xmlhttp.open("GET", "/api?" + "type=get_topic_info&" + "topic_id=" + topic_id, true);
+                xmlhttp.send();
+            }
+    get_topic_info_data();
+
+
+</script>
+
+
+</body>
+</html>
