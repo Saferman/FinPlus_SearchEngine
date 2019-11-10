@@ -26,9 +26,8 @@ MySQL is enough for our work and it's convenient.
 
 Index page: 
 
-![](./images/finplus_index.png)
-
+<div align=center><img width="768" height="503" src="./images/finplus_index.png"/></div>
 Core experts with his or her partners in economy fields.
 
-![](./images/network.png)
+<div align=center><img width="505" height="479" src="./images/network.png"/></div>
 
